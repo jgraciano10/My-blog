@@ -3,32 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Lab. Futuros</title>
+    <title>Graciano Web Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="body__firstdiv">
-        <div class="firstdiv__menu">
-            <i class="bi bi-list menu__logo" id="menu_abrir"></i>
-            <p class="menu_cerrar" id="menu_cerrar">X</p>
+    <div class="container">
+        <div>
+            <h1 class="container__title">
+                <p>Graciano's page</p>
+            </h1>
         </div>
-        <nav class="firstdiv_nav">
-            <ul class="nav__lista">
-                <li class="lista__elemento"><a class="elemento__url elemento__url--inicio" href="#"><i class="bi bi-house-door url__i"><span class="i__span">Inicio</span></i></a></li>
-                <li class="lista__elemento"><a class="elemento__url elemento__url--registro" href="#"><i class="bi bi-r-circle url__i"><span class="i__span">Registro</span></i></a></li>
-                <li class="lista__elemento"><a class="elemento__url elemento__url--reservas" href="#"><i class="bi bi-calendar-day url__i"><span class="i__span">Reservas</span></i></a></li>
-                <li class="lista__elemento"><a class="elemento__url elemento__url--acerca" href="#"><i class="bi bi-file-earmark-person url__i"><span class="i__span" >Acerca de nosotros</span></i></a></li>
-                <li class="lista__elemento"><a class="elemento__url elemento__url--feedback" href="#"><i class="bi bi-file-plus url__i"><span  class="i__span">Feedback</span></i></a></li>
+        <div class="ulContainer">
+            <ul class="ulContainer__ul" >
+                <li class="ul__li">Principal Page</li>
+                <li class="ul__li">My Favorite Music</li>
+                <li class="ul__li">Movies section</li>
             </ul>
-        </nav>
-    </div>
-    <div class="body__seconddiv">
-        <header class="seconddiv__header"> Hi this is Juan</header>
-        <section class="seconddiv__section"></section>
-        <footer  class="seconddiv__footer"></footer>
-    </div>
+        </div>
+
+        <div class="container__introduction">
+            <div>
+                <img class="introduction__images" src="images/ImagenDancer.jpg" alt="Dance" width="100%" > 
+            </div>
+            <div>
+                <img class="introduction__images" src="images/myImage.jpeg" alt="Dance" width="100%" > 
+            </div>
+            <div>
+                <img class="introduction__images" src="images/DanceIsLife.jpg" alt="Dance" width="100%" > 
+            </div>
+        </div>
+
+
+
+        <div class="container__mypersonalinfo">
+            <div class="mypersonalinfo__imageContainer">
+                <img src="images/MySecondImage.jpeg" alt="My Image" width="100%" class="imageContainer__image">
+            </div>
+
+            <div class="mypersonalinfo__description">
+                <h2>A little bit about myself</h2>
+                <p>I'm a 25 years old guy and I'm a father of a little and beautiful boy. I have tons of dreams, tons of goals to come my dreams true. since my childhood I've been so curious about how the apps, computers and internet work so that is the reason of why I currently study software development. I'm a spanish navite speaker, thanks to my work experience in the bpo call center industry and my autolearning process I'm able to speak and write english fluently though. Talking about my hobbies, I'm into dance,since my childhood I've been part of dance's groups, I enjoy music in general, my favorite music genre is Salsa though. I'm into wacth movies but that is not one of my most frecunt hobbies. Throughout this page we are going to watch all my description whit more specific information about every different topic</p> 
+            </div>
+            
+        </div>
+        
+        
+        
+        <div>
+            <div>
+                <h2>
+                    My current knowledge
+                </h2>
+            </div>
+            <div class="container__cPictures">
+                <div>
+                    <img src="images/JavaScript - Wikipedia, la enciclopedia libre.jpg" alt="Js Picture" width="35%">
+                </div>
+                <div>
+                    <img src="images/How to set up Typescript compiler and editing environment with Node_js.jpg" alt="Ts Picture" width="35%">
+                </div>
+                <div>
+                    <img src="images/HTML3.jpg" alt="Html Picture" width="40%">
+                </div>
+                <div>
+                    <img src="images/Css.jpg" alt="Css Picture" width="30%">
+                </div>
+                <div>
+                    <img src="images/Angular.jpg" alt="Angular picture" width="35%"> 
+                </div>
+                <div>
+                    <img src="images/Bootstrap.jpg" alt="Bootstrap picture" width="35%"> 
+                </div>
+                
+            </div>
+            
+        </div>
     
-    <script src="main.js"></script>
+        <div>
+            <h2>
+                Some of my projects
+            </h2>
+    
+            <div>
+                <div class="container__myProject">
+                    <h3 class="myProject__title">
+                        Prime, Fibonnachi and par
+                    </h3>
+                    <pre class="myProject__text">
+Write a program that, given a number, checks and shows if it is prime, fibonacci and even. Examples:
+    
+- With the number 2, it will tell us: "2 is prime, fibonacci and even"
+                        
+- With the number 7, it will tell us: "7 is prime, it is not fibonacci and it is odd
+                    </pre>
+    
+                    <a class="myProject__link" href="https://github.com/jgraciano10/25.-PRIMO--FIBONACCI-Y-PAR" target="_blank"><i class="bi bi-github">Project's link in Github</i></a>    
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div class="container__myProject">
+                    <h3 class="myProject__title">
+                        Stone, Paper, Scissors, Lizard, Spock
+                    </h3>
+                    <pre class="myProject__text">
+Create a program that calculates who wins the most games in rock, paper, scissors, lizard, spock.
+
+- The result can be: "Player 1", "Player 2", "Tie"
+                        
+- The function receives a list containing pairs, representing each move.
+                        
+- The pair may contain combinations of "" (stone), "" (paper), "" (scissors), "" (lizard) or "" (spock).
+                        
+- Example. Entrance: [("",""), ("",""), ("","")]. Result: "Player 2".
+                        
+- You must look for information on how to play with these 5 possibilities.
+                    </pre>
+    
+                    <a class="myProject__link" href="https://github.com/jgraciano10/26.-PIEDRA--PAPEL--TIJERA--LAGARTO--SPOCK" target="_blank"><i class="bi bi-github">Project's link in Github</i></a>    
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div class="container__myProject">
+                    <h3 class="myProject__title">
+                        The "Hacker language"
+                    </h3>
+                    <pre class="myProject__text">
+Write a program that receives text and transforms natural language into "hacker language" (actually known as "leet" or "1337").
+This language is characterized by replacing alphanumeric characters.
+
+- Use this table (https://www.gamehouse.com/blog/leet-speak-cheat-sheet/) with the alphabet and numbers in "leet".
+ (Use the first option of each transformation. For example "4" for "a")
+                    </pre>
+    
+                    <a class="myProject__link" href="https://github.com/jgraciano10/22.-EL-LENGUAJE-HACKER" target="_blank"><i class="bi bi-github">Project's link in Github</i></a>    
+                </div>
+            </div>
+        </div>
+    
+        <footer class="container__footer">
+            <p class="myProject__text">That was a little bit about myself</p>
+            <a href="https://github.com/jgraciano10" class="footer__logos logos__facebook" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.facebook.com/juan.graciano.568294/?locale=es_LA" class="footer__logos logos__facebook" target="_blank"><i class="bi bi-facebook"></i></a> <br>
+            <a href="https://www.instagram.com/juan_101_graciano/" class="footer__logos logos__instagram" target="_blank"><i width="100%" class="bi bi-instagram"></i></a>
+        </footer>
+        
+    </div>
 </body>
 </html>

@@ -1,255 +1,121 @@
-html {
-  height: 100%;
-  min-height: 100%;
+html{
+  background-color: #FFFAFA;
 }
-
-body {
+.container{
+  background-color: #FFFAFA;
   display: grid;
-  grid-template-columns: 5% 95%;
-  margin: 0;
-  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: (5, 1fr);
+  margin: 0 8rem;
+  gap: 2rem;
 }
-
-.body__seconddiv {
-  background-color: blueviolet;
-}
-
-@media (max-width: 600px) {
-  body {
-    grid-template-columns: 8% 82%;
-  }
-}
-.body__firstdiv {
-  background-color: skyblue;
-}
-
-.firstdiv__menu {
-  background-color: skyblue;
+.container__title{
   display: flex;
-  align-items: flex-start;
   justify-content: center;
 }
 
-.menu__logo {
-  color: skyblue;
-  background-color: #000814;
-  border-radius: 50px;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.menu_cerrar {
-  color: skyblue;
-  background-color: #000814;
-  border-radius: 50px;
-  display: none;
-  padding: 1rem;
-  margin-top: auto;
-  margin-bottom: auto;
-  cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .menu__logo {
-    display: none;
-  }
-}
-.firstdiv_nav {
-  height: 100%;
-}
-
-.nav__lista {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.lista__elemento {
-  margin-left: 0;
-  padding: 0;
-  padding-left: 0;
+.ulContainer__ul{
+  background-color: #D2691E;
+  list-style:none;
   padding-right: 0;
-  margin-bottom: 0.5rem;
-  background-color: yellow;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
+  justify-content: space-around;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  border-radius: 2rem;
+
 }
 
-.elemento__url {
-  color: #000814;
+.ul__li{
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #FFFAFA;
+}
+.ul__li:hover{
+  background-color: antiquewhite;
+}
+
+.ul__li:active{
+  background-color: antiquewhite;
+}
+
+.container__introduction{
+  display: flex;
+  justify-content: space-around;
+}
+
+.introduction__images{
+  border-radius: 0.5rem;
+}
+
+.container__mypersonalinfo{
+  display: flex;
+  gap: 1rem;
+}
+
+.mypersonalinfo__imageContainer{
+  padding: 0 1rem;
+  
+}
+
+.mypersonalinfo__description{
+  background-color: #D2691E;
+  color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 1rem ;
+}
+
+.imageContainer__image{
+  border-radius: 2rem;
+}
+.container__cPictures{
+  display: flex;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1rem;
+  border-color: radial-gradient(circle, #FFB6C1, #FFFFFF);
+
+}
+.container__myProject{
+  background-color: #D2691E;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.myProject__title{
+  color: #FFFFFF;
+}
+
+.myProject__text{
+  color: #FFFFFF;
+}
+
+.myProject__link{
   text-decoration: none;
+  color: #FFFFFF;
+}
+
+.container__footer{
+  background-color: #D2691E;
+  border-radius: 0.2rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 0;
-  width: 100%;
-  height: 100%;
+  justify-content: flex-end;
+  gap: 0.5rem;
+
 }
 
-.elemento__url:hover {
-  color: skyblue;
-  background-color: #000814;
+.footer__logos{
+  border-radius: 3rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
-.url__i {
-  font-size: 1.5rem;
+.logos__instagram{
+  background-color: #FFFFFF;
+  color: #D2691E;
 }
 
-.i__span {
-  display: none;
+.logos__facebook{
+  background-color: #FFFAFA;
+  color: #D2691E;
 }
-
-@media (max-width: 600px) {
-  .nav__lista {
-    margin-top: 5%;
-  }
-}
-@media (max-height: 950px) and (max-width: 600px) {
-  .elemento__url--inicio:hover::after {
-    content: "Inicio";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 1%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-  .elemento__url--registro:hover::after {
-    content: "Registro";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 6%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-  .elemento__url--reservas:hover::after {
-    content: "Reservas";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 12%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-  .elemento__url--acerca:hover::after {
-    content: "Acerca de";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 17%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-  .elemento__url--feedback:hover::after {
-    content: "Feedback";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 22%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-}
-@media (max-height: 700px) and (max-width: 600px) {
-  .elemento__url--inicio:hover::after {
-    content: "Inicio";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 1%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-  .elemento__url--registro:hover::after {
-    content: "Registro";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 7%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-  .elemento__url--reservas:hover::after {
-    content: "Reservas";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 14%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-  .elemento__url--acerca:hover::after {
-    content: "Acerca de";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 21%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-  .elemento__url--feedback:hover::after {
-    content: "Feedback";
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px;
-    position: absolute;
-    top: 27.5%;
-    left: 8%;
-    z-index: 1;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 50px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
