@@ -7,7 +7,7 @@ html{
   grid-template-columns: 1fr;
   grid-template-rows: (5, 1fr);
   margin: 0 8rem;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 .container__title{
   display: flex;
@@ -37,6 +37,11 @@ html{
 
 .ul__li:active{
   background-color: antiquewhite;
+}
+
+.li__a{
+  text-decoration: none;
+  color: #FFFAFA;
 }
 
 .container__introduction{
@@ -80,6 +85,7 @@ html{
   background-color: #D2691E;
   padding: 1rem;
   border-radius: 1rem;
+  gap: 1rem;
 }
 
 .myProject__title{
@@ -104,6 +110,30 @@ html{
 
 }
 
+@media (max-width:600px) {
+  .container__footer{
+    background-color: #D2691E;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  
+  }
+  .container__myProject{
+    flex-wrap: wrap;
+  }
+
+  .container__cPictures{
+    flex-wrap: wrap;
+  }
+
+  .container__introduction{
+    flex-wrap: wrap;
+  }
+  
+}
+
 .footer__logos{
   border-radius: 3rem;
   padding: 0.5rem;
@@ -118,4 +148,82 @@ html{
 .logos__facebook{
   background-color: #FFFAFA;
   color: #D2691E;
+}
+
+/* Movie´s section*/
+
+
+
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto 0 auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion__button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 40px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion__button:hover {
+	background: #137c32;
+}
+
+.container__videos{
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.container__title2{
+  background-color: blanchedalmond;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.videos__music{
+  border-radius: 0.5rem;
 }
